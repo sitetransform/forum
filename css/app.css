@@ -1,6 +1,7 @@
 #panel-header {
   text-align: left !important;
   width: 100%;
+  opacity: 0.6;
 }
 
 .display {
