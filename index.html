@@ -63,31 +63,35 @@
             <ul class="threads"></ul>
           </div>
         </div>
-        <!-- Login Pop Up -->
+                <!-- Login Pop Up -->
         <div class="popup login-popup">
           <div class="view view-init view-popup" data-view="popup-view">
             <div class="page" data-name="popup-view">
               <div class="page-content login-screen-content">
-                <h2 class="login-screen-title">Login</h2>
+                <div class="login-screen-title">Login</div>
                 <form class="list" id="signin-form">
-                  <label for="signin-email">Email</label>
-                  <input
-                    type="email"
-                    id="signin-email"
-                    name="username"
-                    placeholder="Your email address"
-                    required
-                    validate
-                  />
-                  <label for="password">Password</label>
-                  <input
-                    type="password"
-                    id="signin-password"
-                    name="password"
-                    placeholder="Your password"
-                    required
-                    validate
-                  />
+                  <div class="list">
+                    <ul>
+                      <li class="item-content item-input">
+                        <div class="item-inner">
+                          <label class="item-title item-label">Email</label>
+                          <div class="item-input-wrap">
+                            <input type="email" id="signin-email" name="username" placeholder="Your email address"
+                              required validate />
+                          </div>
+                        </div>
+                      </li>
+                      <li class="item-content item-input">
+                        <div class="item-inner">
+                          <label class="item-title item-label">Password</label>
+                          <div class="item-input-wrap">
+                            <input type="password" id="signin-password" name="password" placeholder="Your password"
+                              required validate />
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
                   <p class="item-label display-flex justify-content-center error red-text"></p>
                   <div class="row display-flex justify-content-center">
                     <a class="transbtn" id="sign-in" href="#">Sign In</a>
@@ -98,10 +102,10 @@
             </div>
           </div>
         </div>
+        <!-- Closing Tags -->
       </div>
     </div>
   </div>
-
   <!-- Firebase -->
   <script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-auth.js"></script>
