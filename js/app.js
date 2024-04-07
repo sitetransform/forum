@@ -63,6 +63,7 @@ const displayImage = (folder, id, element, background) => {
       (background)
         ? document.getElementById(element).style.backgroundImage = 'url(' + url + ')'
         : document.getElementById(element).src = url;
+      document.getElementById("downloadBtn").setAttribute("href", url);
     }).catch();
 }
 
