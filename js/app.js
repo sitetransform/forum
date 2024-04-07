@@ -109,7 +109,7 @@ const setUpThreads = (data) => {
       <li class="swipeout thread" id="${thread.user}">
         <div class="swipeout-content">
           <a href="/thread/${doc.id}/" data-thread-id="${doc.id}" class="item-link item-content thread-details">
-            <div class="item-media"><img id="${doc.id}-img" class="lazy lazy-fade-in" width="40" height="40"/></div>
+            <div class="item-media"><img id="${doc.id}-img" class="lazy lazy-fade-in" width="40" height="40" alt="Right-click > Save Image As... to download." /></div>
             <div class="item-inner">
               <div class="item-title-row">
                 <div class="item-title">${thread.title}  
