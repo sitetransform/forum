@@ -65,8 +65,6 @@ const displayImage = (folder, id, element, background) => {
         : document.getElementById(element).src = url;
     }).catch();
 }
-// Download Button
-document.getElementById("downloadBtn").innerHTML = "<a href='" + name +"' download>Download File</a>";
 
 // Delete Thread/Comment Image
 const deleteImage = (folder, id) => {
